@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
 # Load the trained Lasso model
-with open('best_model (2).pkl', 'rb') as file:
+with open('best_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Initialize a label encoder for categorical variables
