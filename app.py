@@ -23,7 +23,6 @@ def predict_earthquake(features):
     full_features[4] = features[3]  # magType_encoded
     full_features[17] = features[4] # month
     full_features[20] = features[5] # day
-    
     # Reshape to fit model input and predict
     input_data = full_features.reshape(1, -1)
     prediction = model.predict(input_data)
